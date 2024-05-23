@@ -16,11 +16,14 @@ const userSchema= new mongoose.Schema({
         required:true
     },
     picture:{
-        type:Buffer,
+        type:String,
+        default:"https://icon-library.com/images/person-icon-black/person-icon-black-2.jpg"
     }
 
 
+},{
+    timestamps:true
 });
 
-const userData=mongoose.model('User',userSchema);
-module.exports=userData;
+const user=mongoose.model('User',userSchema);
+module.exports=user;
