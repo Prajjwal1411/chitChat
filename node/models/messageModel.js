@@ -19,5 +19,5 @@ const messageModel=mongoose.Schema({
 
 });
 
-const message=mongoose.model('Message',messageModel);
+const message=mongoose.model('Messages',messageModel);
 module.exports=message;

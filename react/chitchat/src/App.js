@@ -7,18 +7,18 @@ import Chat from './Components/Chat';
 
 function App() {
   return (
-    <>
-   
-   <Router>
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/chat" element={<Chat/>}/>
-      
-    </Routes>
-   </Router>
+    <div class="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/chat" element={<Chat/>}/>
+        </Routes>
+      </Router>
+    </div>
 
-      
-      </>
+
+   
+   
   );
 }
 
